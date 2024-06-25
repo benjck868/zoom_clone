@@ -7,8 +7,8 @@ import { useUser } from '@clerk/nextjs'
 import { StreamCall, StreamTheme } from '@stream-io/video-react-sdk'
 import React, { useState } from 'react'
 
-export default function page({params: {id}}:{params:{id:string}}) {
-  const {user, isLoaded} = useUser()
+export default function Page({params: {id}}:{params:{id:string}}) {
+  const {isLoaded} = useUser()
   const [isSetUpComplete, setIsSetUpComplete] = useState(false)
   const {call, isCallLoading} = useGetCallById(id)
 

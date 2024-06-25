@@ -56,7 +56,7 @@ export default function CallList({type}:CallListProps) {
             
         }
         if(type === "recordings") fetchRecordings()
-    }, [type, callRecordings])
+    }, [type, callRecordings,toast])
 
     const calls = getCalls()
     const noCallsMessage = getNoCallsMessage()
