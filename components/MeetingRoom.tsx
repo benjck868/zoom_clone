@@ -58,7 +58,7 @@ export default function MeetingRoom() {
                 {
                     CallLayoutSelections.map((layout, index)=>{
                         return(
-                            <div>
+                            <div key={index}>
                                 <DropdownMenuItem key={index} onClick={()=>setLayout(layout)}>{layout.charAt(0).toUpperCase()+layout.slice(1)}</DropdownMenuItem>
                                 <DropdownMenuSeparator key={index}/>
                             </div>
